@@ -1,0 +1,15 @@
+SELECT        SUM(verilen_para) AS toplam
+FROM            para
+WHERE        (musteri_kodu = 202) 
+select sum(sut_tutar)  AS toplam
+from alinan_sut 
+where (musteri_kodu =202)
+Select Sum(urun_tutar) As toplam
+from verilen_urun
+where (musteri_kodu =202)
+
+
+
+SELECT Sum(sut_lt)*40 /
+       (select DATEDİFF(day,'2014-02-13', '2016-12-25') AS günsayısı) AS toplam
+form alinan_sut;
